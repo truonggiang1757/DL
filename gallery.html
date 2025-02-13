@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" type="x-icon" href="./svg/heart.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our memories together</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      .row {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      }
+      .column {
+        grid-column: span 3;
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        gap: 1rem;
+      }
+      img[src='svg/click.svg'] {
+        opacity: 0; /* Start invisible */
+        position: absolute; /* Keeps it in place */
+        top: 40px; /* Distance from the top of the page */
+        left: -100px;
+        z-index: 1000; /* Ensures it's above other elements */
+        pointer-events: none;
+      }
+      body {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+        background-color: #ff758f !important;
+        margin: 0;
+        opacity: 0;
+      }
+      .column img {
+        width: 100%;
+        height: auto;
+        transition: transform 0.5s ease-in-out;
+        border-radius: 10px;
+        border: white 5px solid;
+        position: relative;
+        z-index: 10;
+        margin-top: 15px;
+      }
+
+      .column img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+        z-index: 10;
+      }
+      .texts {
+        color: #800f2f;
+        font-size: 50px;
+        font-family: 'Pacifico', cursive;
+        line-height: 1;
+        text-align: center;
+        z-index: 3;
+        top: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="" class="containers py-5 texts">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand text-light px-3" href="main.html"
+          >Valentine Card</a
+        >
+        <a class="navbar-brand text-light px-3" href="gallery.html">Gallery</a>
+        <a class="navbar-brand text-light px-3" href="schedule.html"
+          >Timeline</a
+        >
+        <a class="navbar-brand text-light px-3" href="ours.html">Us</a>
+        <a class="navbar-brand text-light px-3" href="information.html"
+          >Survey</a
+        >
+      </nav>
+      <img src="svg/click.svg" alt="Click Icon" class="absolute-svg" />
+    </div>
+    <div class="container-fluid">
+      <div class="heading pt-4">
+        <h1 class="text-center text-white pt-4 texts">Our memories</h1>
+        <h4 class="text-center text-light py-1"></h4>
+      </div>
+      <div class="row py-5 px-lg-5 px-sm-0">
+        <div class="column">
+          <img
+            src="./images/1.jpg"
+            class="h:scale-1"
+            alt="Nhím đang nhom nhommm"
+            srcset=""
+          />
+          <div class="responsive">
+            <div class="img">
+              <img
+                src="./images/2.jpg"
+                alt="Đồ Hàn ở Big Mama Hanoi 🍛"
+                srcset=""
+              />
+            </div>
+          </div>
+          <img src="./images/3.jpg" alt="Ngày tỏ tình - 16/11" srcset="" />
+          <img src="./images/4.jpg" alt="Nhím under an arch" srcset="" />
+          <img
+            src="./images/5.jpg"
+            alt="Lũ iêu nhau khoe đi ăn =&#41;&#41;&#41;&#41;&#41; 🍠"
+            srcset=""
+          />
+          <img
+            src="./images/31.jpg"
+            alt="Này là đi ăn Lẩu Phan nè 🍲"
+            srcset=""
+          />
+        </div>
+        <div class="column">
+          <img src="./images/6.jpg" alt="Merry Christmas! 🎄" srcset="" />
+          <img src="./images/25.jpg" alt="Thua bowling 🙂" srcset="" />
+          <img
+            src="./images/27.jpg"
+            alt="Màu hơi bị cháy tí nhưng xem vẫn hay (Chay Vô Vi)"
+            srcset=""
+          />
+          <img src="./images/7.jpg" alt="Năm mới đi chụp ảnh ptb" srcset="" />
+          <img src="./images/26.jpg" alt="PTB part 2" srcset="" />
+          <img src="./images/8.jpg" alt="Aha năm mới nè" srcset="" />
+          <img src="./images/32.jpg" alt="Hehe" srcset="" />
+          <img src="./images/33.jpg" alt="Ququ" srcset="" />
+        </div>
+        <div class="column">
+          <img src="./images/9.jpg" alt="Hehe Ququ Nhím Zang" srcset="" />
+          <img
+            src="./images/10.jpg"
+            alt="Nhí nhảnh meets nghiêm túc"
+            srcset=""
+          />
+          <img src="./images/28.jpg" alt="Hehe Ququ" srcset="" />
+          <img
+            src="./images/11.jpg"
+            alt="Tự dưng nhiều bồ câu quá =&#41;&#41;&#41;&#41;&#41;"
+            srcset=""
+          />
+          <img src="./images/12.jpg" alt="Slavic stance" srcset="" />
+          <img src="./images/13.jpg" alt="Xinhhhhhhh" srcset="" />
+          <img src="./images/34.jpg" alt="Tụi iêu nhau" srcset="" />
+        </div>
+        <div class="column">
+          <img src="./images/14.jpg" alt="Xinh đẹp ở hồ gươm ❤️" srcset="" />
+          <img src="./images/15.jpg" alt="Ăn lổu 🍲 kichi" srcset="" />
+          <img src="./images/16.jpg" alt="Yeeeeeê" srcset="" />
+          <img
+            src="./images/17.jpg"
+            alt="Cô ấy thích bức này nhiều lắm, tại đúng người chụp"
+            srcset=""
+          />
+          <img src="./images/25.jpg" alt="Thua bowling" srcset="" />
+          <img src="./images/21.jpg" alt="Phồng" srcset="" />
+          <img
+            src="./images/35.jpg"
+            alt="Chs bảo đẹp trai đáng iêu gì ấy"
+            srcset=""
+          />
+          <img
+            src="./images/36.jpg"
+            alt="=&#41;&#41;&#41;&#41;&#41;&#41; Khỏi nói tự cảm nhận"
+            srcset=""
+          />
+        </div>
+        <div class="column">
+          <img src="./images/18.jpg" alt="Hand holding" srcset="" />
+          <img src="./images/19.jpg" alt="Mím môi cuteee ❤️😍" srcset="" />
+          <img src="./images/22.jpg" alt="Chị đại anh cả" srcset="" />
+          <img
+            src="./images/23.jpg"
+            alt="Quá đẹp lun ai chụp thế kbt 😍"
+            srcset=""
+          />
+          <img
+            src="./images/29.jpg"
+            alt="Như thủy thủ mặt trăng ấy :&#41;"
+            srcset=""
+          />
+          <img
+            src="./images/30.jpg"
+            alt="Bắt chước ốc nma hơi fail"
+            srcset=""
+          />
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content-wrapper">
+        <img class="modal-content" id="img01" />
+        <div id="caption"></div>
+      </div>
+      <span class="close">&times;</span>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const images = document.querySelectorAll('.column img');
+        const modal = document.getElementById('myModal');
+        const modalImg = document.getElementById('img01');
+        const captionText = document.getElementById('caption');
+        const closeBtn = document.querySelector('.close');
+        const body = document.body;
+        const content = document.querySelector('.container-fluid');
+
+        images.forEach((img) => {
+          img.addEventListener('click', function () {
+            modal.style.display = 'flex';
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt || 'No description available'; // Display alt text
+            body.classList.add('modal-open'); // Prevent scrolling
+            content.classList.add('blur'); // Apply blur effect to background
+          });
+        });
+
+        closeBtn.addEventListener('click', function () {
+          modal.style.display = 'none';
+          body.classList.remove('modal-open');
+          content.classList.remove('blur');
+        });
+
+        modal.addEventListener('click', function (e) {
+          if (e.target !== modalImg) {
+            modal.style.display = 'none';
+            body.classList.remove('modal-open');
+            content.classList.remove('blur');
+          }
+        });
+      });
+    </script>
+    <script>
+      window.addEventListener('load', function () {
+        document.body.style.opacity = '0'; // Start invisible
+        setTimeout(() => {
+          document.body.style.transition = 'opacity 0.8s ease-in-out';
+          document.body.style.opacity = '1'; // Fade in body
+
+          // Fade in the SVG after the body transition is complete
+          setTimeout(() => {
+            const svgElement = document.querySelector(
+              "img[src='svg/click.svg']",
+            );
+            if (svgElement) {
+              svgElement.style.transition = 'opacity 0.8s ease-in-out';
+              svgElement.style.opacity = '1';
+            }
+          }, 1500); // Delay SVG fade-in until body transition ends
+        }, 50); // Small delay for smooth transition
+      });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+.valentines-day-card:before {
+  content:"";
+  position: absolute;
+  background-color: #ffb3c1;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  top:660px;
+  left:-25px;
+  box-shadow: 55px 20px #ffb3c1, 140px 10px #ffb3c1,180px 25px #ffb3c1, 240px 5px #ffb3c1, 330px 10px #ffb3c1, 390px 5px #ffb3c1, 420px 20px #ffb3c1, 500px 15px #ffb3c1, 540px 5px #ffb3c1,
+  635px 20px #ffb3c1, 675px 20px #ffb3c1, 750px 30px #ffb3c1, 810px 20px #ffb3c1, 850px 10px #ffb3c1, 930px 15px #ffb3c1, 970px 20px #ffb3c1, 1050px 30px #ffb3c1, 1100px 10px #ffb3c1, 1175px 20px #ffb3c1;
+}
+
+.valentines-day-card:after {
+  content:"";
+  position: absolute;
+  background-color: #ffccd5;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  top:680px;
+  left:-40px;
+  box-shadow: 45px 20px #ffccd5, 135px 20px #ffccd5,185px 30px #ffccd5, 260px 20px #ffccd5, 340px 15px #ffccd5, 365px 15px #ffccd5, 420px 20px #ffccd5, 470px 30px #ffccd5, 570px 15px #ffccd5,
+  635px 20px #ffccd5, 665px 20px #ffccd5, 750px 30px #ffccd5, 820px 20px #ffccd5, 880px 20px #ffccd5, 930px 15px #ffccd5, 980px 33px #ffccd5, 1040px 30px #ffccd5, 1100px 15px #ffccd5, 1150px 10px #ffccd5;
+}
+
+.clouds {
+  position: absolute;
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  background-color: #fff0f3;
+  z-index:5;
+  top:700px;
+  left:-60px;
+  box-shadow: 55px 30px #fff0f3, 125px 10px #fff0f3,175px 20px #fff0f3, 250px 10px #fff0f3, 320px 5px #fff0f3, 380px 10px #fff0f3, 430px 30px #fff0f3, 490px 20px #fff0f3, 560px 5px #fff0f3,
+  625px 30px #fff0f3, 685px 10px #fff0f3, 740px 20px #fff0f3, 800px 10px #fff0f3, 860px 5px #fff0f3, 920px 10px #fff0f3, 970px 30px #fff0f3, 1040px 20px #fff0f3, 1100px 5px #fff0f3, 1175px 20px #fff0f3;
+}
+
+.right-side:before, .right-side:after {
+  position: absolute;
+  content:"";
+  transform-origin: left;
+  animation: move 1s ease infinite;
+  pointer-events: none;
+}
+
+.right-side:before {
+  border-radius:50% 50% 50% 0;
+  width:21px;
+  height:20px;
+  background-color: #c9184a;
+  left:-0.26px;
+  pointer-events: none;
+}
+
+.left-side:before, .left-side:after {
+  position: absolute;
+  content:"";
+  transform-origin: right;
+  animation: move 1s ease infinite;
+  pointer-events: none;
+}
+
+.left-side:before {
+  border-radius:50% 50% 0 50%;
+  width:20px;
+  height:20px;
+  left:-20.7px;
+  background-color: #ff4d6d;
+  pointer-events: none;
+}
+
+.left-side:after {
+  height:0;
+  width:0;
+  left:-15px;
+  border-bottom:10px solid transparent;
+  border-right: 15px solid #ff4d6d;
+  top:19px;
+  pointer-events: none;
+}
+
+.hearts {
+    position: absolute;
+    z-index:2;
+    pointer-events: none;
+  }
+  
+  .heart1 {
+    position: absolute;
+    left:100px;
+    top:350px;
+    animation: up 4s linear forwards 1s;
+  }
+  
+  .heart2 {
+    position: absolute;
+    left:370px;
+    top:600px;
+    animation: up 5s linear forwards 1.8s;
+  }
+  
+  .heart3 {
+    position: absolute;
+    left:85px;
+    top:715px;
+    animation: up 5s linear forwards 3s;
+  }
+  
+  .heart4 {
+    position: absolute;
+    left:320px;
+    top: 920px;
+    animation: upTwo 9s linear infinite 3.5s;
+  }
+  
+  .heart5 {
+    position: absolute;
+    left:700px;
+    top:900px;
+    animation: upTwo 11s linear infinite 4.5s;
+  }
+  
+  .heart6 {
+    position: absolute;
+    left:140px;
+    top:850px;
+    animation: upTwo 12s linear infinite 13s;
+  }
+  
+  .heart7 {
+    position: absolute;
+    left:300px;
+    top:925px;
+    animation: upTwo 16s linear infinite 17s;
+  }
+  
+  .heart8 {
+    position: absolute;
+    left:480px;
+    top:950px;
+    animation: upTwo 13s linear infinite 14s;
+  }
+  
+  .heart9 {
+    position: absolute;
+    left:650px;
+    top:875px;
+    animation: upTwo 17s linear infinite 18s;
+  }
+  
+  .heart10 {
+    position: absolute;
+    left:800px;
+    top:920px;
+    animation: upTwo 13s linear infinite 15s;
+  }
+  
+  .heart11 {
+    position: absolute;
+    left:930px;
+    top:880px;
+    animation: upTwo 17s linear infinite 18s;
+  }
+  
+  .heart12 {
+    position: absolute;
+    left:1040px;
+    top:910px;
+    animation: upTwo 16s linear infinite 17s;
+  }
+  
+  .heart13 {
+    position: absolute;
+    left:1100px;
+    top:860px;
+    animation: upTwo 16s linear infinite 18s;
+  }
+  
+  .heart14 {
+    position: absolute;
+    left:300px;
+    top:300px;
+    animation: up 4s linear forwards 1s;
+  }
+  
+  .heart15 {
+    position: absolute;
+    left:450px;
+    top:720px;
+    animation: up 4s linear forwards 1s;
+  }
+  
+  .heart16 {
+    position: absolute;
+    left:700px;
+    top:650px;
+    animation: up 4s linear forwards 1s;
+  }
+  
+  .heart17 {
+    position: absolute;
+    left:860px;
+    top:400px;
+    animation: up 4s linear forwards 1s;
+  }
+  
+  .heart18 {
+    position: absolute;
+    left: 1000px;
+    top:700px;
+    animation: up 4s linear forwards 1s;
+  }
+  
+  .heart19 {
+    position: absolute;
+    left:1100px;
+    top:450px;
+    animation: up 4s linear forwards 1s;
+  }
+  
+  .heart20 {
+    position: absolute;
+    left:600px;
+    top:450px;
+    animation: up 4s linear forwards 1s;
+  }

@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pangolin&display=swap');
+
+body {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff758f !important;
+  margin: 0;
+}
+
+body {
+  opacity: 0; /* Start invisible */
+}
+
+.container-custom {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  padding-top: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.containers {
+  padding-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contain {
+  width: 100%;
+  display:flex;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0;
+}
+
+#valentineCarousel {
+  max-width: 1225px;
+  width: 100%;
+  max-height: 800px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.valentines-day-card {
+  position: relative;
+  width: 1225px;
+  height: 800px;
+  background-color: #ff8fa3;
+  overflow: hidden;
+  border:10px solid white;
+  border-radius:10px;
+  box-shadow: 0 0 100px rgba(0,0,0,.4);
+}
+
+.right-side:after {
+  height:0;
+  width:0;
+  border-bottom:10px solid transparent;
+  border-left: 15px solid #c9184a;
+  top:19px;
+  left:-0.26px;
+}
+
+.carousel-inner {
+  background-color: transparent !important;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  z-index: 10000 !important; /* Make sure controls appear above carousel content */
+  width: 8% !important;
+}
+
+@keyframes move {
+  0%, 100% {transform: rotateY(0);}
+  50% {transform: rotateY(-45deg);}
+}
+
+@keyframes up {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-200px);}
+}
+
+@keyframes upTwo {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-1000px);}
+}
+
+.text {
+  position: absolute;
+  color: #800f2f;
+  font-size:50px;
+  font-family: 'Pacifico', cursive;
+  line-height:1;
+  text-align: center;
+  width: 1100px;
+  left:50px;
+  z-index:3;
+  top:75px;
+}
+
+.text2 {
+  font-family: 'Pangolin', serif !important;
+  font-size:30px;
+}
+
+.texts {
+  color: #800f2f;
+  font-size: 50px;
+  font-family: 'Pacifico', cursive;
+  line-height: 1;
+  text-align: center;
+  z-index: 3;
+  top: 350px;
+}
+
+.text-center{
+  align-items: center;
+}
+
+#final-button {
+  display: none; /* Initially hidden */
+  margin: 0;
+}
+
+.button-custom:hover {
+  color: #ff758f !important;
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out !important;
+}
+
+.container-ex {
+  transition: all 0.8s ease-in-out;
+}
+
+.nav-link {
+  color: #ff758f !important; /* Default text color */
+  transition: color 0.5s ease-in-out; /* Smooth color transition */
+  pointer-events: none;
+}
+
+.nav-active .nav-link {
+  color: #ffffff !important; /* Target color when active */
+  transition: color 0.5s ease-in-out;
+  pointer-events: auto;
+}
+
+
+/* Modal container (hidden by default) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.modal-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Modal content (big image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-height: 900px;
+  max-width: 1200px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  animation: zoomIn 0.3s ease-in-out;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Background blur effect when modal is open */
+body.modal-open {
+  overflow: hidden;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+/* Zoom animation */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#caption {
+  color: white;
+  font-size: 18px;
+  margin-top: 10px;
+  padding: 10px;
+  max-width: 80%;
+  border-radius: 5px;
+  animation: zoomIn 0.3s ease-in-out;
+  font-family: 'Pangolin', serif;
+}
+
+.boxsizingBorder {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: center; /* Centers the radios horizontally */
+  align-items: center;
+}
+
+.form-check {
+  display: flex;
+  flex-direction: column; /* Stack radio and label vertically */
+  align-items: center;
+  width: 200px;
+}
+
+.form-check-input {
+  margin-bottom: 10px; /* Adds space between radio button and label */
+  left: 10%;
+  cursor: pointer;
+  align-items: center;
+}
+
+.form-check-label {
+  width: 100px;
+  text-align: center;
+  padding-right: 23px !important;
+}
+
+#final-button {
+  font-size: 20px !important;
+  font-family: 'Pangolin', serif !important;
+}
+
+/* Loading overlay */
+#loadingOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(233, 230, 230, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1.2rem;
+  z-index: 1000;
+  display: none; /* Hidden by default */
+}
+
+/* Spinner animation */
+.spinner {
+  border: 6px solid rgba(0, 0, 0, 0.3);
+  border-top: 6px solid black;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+textarea {
+  background-color: #f0eedc !important;
+  font-family: 'Pangolin', serif;
+}
+
+.absolute-svg {
+  position: absolute; /* Position relative to the nearest positioned ancestor */
+  top: 10px; /* Distance from the top of the page */
+  left: -100px; /* Distance from the left of the page */
+  width: 800px; /* Adjust size as needed */
+  height: auto;
+  z-index: 1000; /* Ensure it's above other elements */
+  pointer-events: none; /* Prevent it from blocking clicks */
+}
+
+
+
